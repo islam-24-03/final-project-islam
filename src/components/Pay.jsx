@@ -6,14 +6,14 @@ const Pay = () => {
       expiryDate: "",
       cvv: "",
       cardHolderName: "",
-      paymentMethod: "card"
+      paymentMethod: "card",
    });
 
    const handleInputChange = (e) => {
       const { name, value } = e.target;
       setPaymentDetails({
          ...paymentDetails,
-         [name]: value
+         [name]: value,
       });
    };
 
@@ -66,13 +66,14 @@ const Pay = () => {
                      placeholder="MM/YY"
                   />
                </div>
+
                <div className="form_group">
-                  <label htmlFor="expiryDate">Код товара</label>
+                  <label htmlFor="productCode">Код товара</label>
                   <input
                      type="text"
-                     id="expiryDate"
-                     name="expiryDate"
-                     value={paymentDetails.expiryDate}
+                     id="productCode"
+                     name="productCode"
+                     value={paymentDetails.productCode || ""}
                      onChange={handleInputChange}
                      required
                      placeholder="************"

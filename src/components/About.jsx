@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 export const About = () => {
+   useEffect(() => {
+      const container = document.querySelector(".container");
+      container.classList.add("fade-in");
+   }, []);
+
    return (
       <div className="About">
          <div className="container">
