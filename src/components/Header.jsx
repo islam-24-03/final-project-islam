@@ -10,10 +10,13 @@ export const Header = () => {
             <div className="logo-text">
                <h1>IStore</h1>
             </div>
-            <nav>
+            <nav className="nav">
                <Link to='/'>Главная</Link>
                <Link to="/about">О нас</Link>
                <Link to="/pay">Оплата</Link>
+               <Link to="/sell">Продать</Link>
+               <Link to="/otzyv">Отзывы</Link>
+               <Link to="/support">Поддержка</Link>
             </nav>
          </div>
          <div className="Header__text">

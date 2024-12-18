@@ -32,7 +32,7 @@
   font-family: monospace;
   color: white;
   font-family: monospace;
-  width: 1420px;
+  width: 1400px;
   border-radius: 5px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   background-color: rgba(0, 0, 0, 0.4);
@@ -41,9 +41,18 @@
 .Header_top h1 {
   font-size: 50px;
   font-weight: bold;
-  margin-right: 930px;
-  padding-left: 20px;
   cursor: pointer;
+}
+
+.logo-text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
 }
 
 .Header_top a {
@@ -51,8 +60,9 @@
   font-size: 20px;
   text-decoration: none;
   font-weight: 300;
-  transition: color 0.3s ease;
-  padding-right: 20px;
+  margin-left: 20px;
+  transition: color 0. 3s ease;
+  /* margin-left: 100px; */
 }
 
 .Header_top a:hover {
@@ -522,3 +532,110 @@ select:focus {
 }
 
 /* Pay */
+
+
+.sell-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+}
+
+.sell-page h1 {
+  color: #333;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.sell-form {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-size: 1rem;
+  color: #555;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #007bff;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+.photo-preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.photo-preview img {
+  max-width: 100%;
+  max-height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.submit-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.submit-button:active {
+  transform: scale(0.98);
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 600px) {
+  .sell-form {
+    padding: 1.5rem;
+    width: 90%;
+  }
+
+  .sell-page h1 {
+    font-size: 1.8rem;
+  }
+}

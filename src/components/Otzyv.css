@@ -1,0 +1,123 @@
+.otzyv {
+   background-color: #f9f9f9;
+   font-family: Arial, sans-serif;
+   padding: 20px;
+   color: #333;
+}
+
+.container {
+   max-width: 800px;
+   margin: 0 auto;
+   background: #fff;
+   padding: 20px;
+   border-radius: 10px;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+   text-align: center;
+   font-size: 2em;
+   margin-bottom: 20px;
+   color: #007bff;
+}
+
+.reviews-list {
+   margin-bottom: 30px;
+}
+
+.review {
+   border: 1px solid #ddd;
+   padding: 15px;
+   margin-bottom: 15px;
+   border-radius: 8px;
+   background: #fefefe;
+}
+
+.review-header {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 10px;
+}
+
+.review-name {
+   font-size: 1.2em;
+   color: #007bff;
+}
+
+.review-date {
+   font-size: 0.9em;
+   color: #666;
+}
+
+.review-text {
+   font-size: 1em;
+   color: #333;
+}
+
+.no-reviews {
+   text-align: center;
+   color: #666;
+}
+
+.review-form {
+   background: #f7f7f7;
+   padding: 20px;
+   border-radius: 10px;
+   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.form-title {
+   text-align: center;
+   font-size: 1.5em;
+   margin-bottom: 15px;
+   color: #333;
+}
+
+.form-group {
+   margin-bottom: 15px;
+}
+
+.form-group label {
+   display: block;
+   font-weight: bold;
+   margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+   width: 100%;
+   padding: 10px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   font-size: 1em;
+}
+
+.form-group textarea {
+   resize: none;
+   height: 100px;
+}
+
+.submit-button {
+   display: block;
+   width: 100%;
+   padding: 10px;
+   background-color: #007bff;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   font-size: 1em;
+   cursor: pointer;
+}
+
+.submit-button:hover {
+   background-color: #0056b3;
+}
+
+.btn {
+   background-color: #0056b3;
+   border: none;
+   width: 100px;
+   height: 30px;
+   border-radius: 4px;
+   color: #fff;
+}
